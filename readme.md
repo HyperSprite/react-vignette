@@ -1,6 +1,18 @@
-# React Test Version Deploy Kit
+# React Vignette
 
-This is just a bare bones React Component publishing setup.
+Adds a basic vignette to a sibling.
+
+## Usage
+
+Add ```<Vignette />``` as a sibling to another component
+
+```js
+<div>
+  <SomeSiblingDiv />
+  <Vignette />
+</div>
+```
+
 
 * Testing includes Jest testing with Enzyme for mounting and rendering and Instamatic for coverage reporting.
 * Linting provided by ESlint with AirBnB presets.

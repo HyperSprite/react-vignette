@@ -1,1 +1,1 @@
-export { default } from './change-me';
+export { default } from './vignette';
