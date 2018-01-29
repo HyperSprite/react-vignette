@@ -17,7 +17,7 @@
   "license": "MIT",
   "description": "Basic Test, Version and Deploy Kit for react component modules",
   "main": "dst/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watch",
