@@ -65,7 +65,8 @@ npm run build
 // publish your module
 // --access public if this is a scoped module and you want it public
 npm publish --access public
-// rm -rf dst
+// delete dst folder
+rm -rf dst
 ```
 
 * version, which will:
