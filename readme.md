@@ -2,8 +2,14 @@
 
 Adds a basic vignette to a sibling.
 
-## Usage
 
+### Install
+```npm install --save @hypersprite/react-vignette```
+
+### Import
+```import Vignette from '@hypersprite/react-vignette'```
+
+## Usage
 Add ```<Vignette />``` as a sibling to another component
 
 ```js
@@ -14,6 +20,8 @@ Add ```<Vignette />``` as a sibling to another component
 ```
 
 
+## Testing and Deployment
+
 * Testing includes Jest testing with Enzyme for mounting and rendering and Instamatic for coverage reporting.
 * Linting provided by ESlint with AirBnB presets.
 * Modern JavaScript and JSX via babel.
@@ -22,8 +30,8 @@ Add ```<Vignette />``` as a sibling to another component
 
 ### Setup
 ```bash
-git clone https://github.com/HyperSprite/react-test-version-deploy-kit.git
-cd react-test-version-deploy-kit
+git clone https://github.com/HyperSprite/react-vignette.git
+cd react-vignette
 npm install
 ```
 Make sure to update this readme.md and package.json with your own information.
@@ -47,11 +55,18 @@ Testing provided by Jest, Enzyme and coverage report by Istanbul
 git commit -am 'some totally useful comment'
 ```
 
-
-
 Next, we need to Version:
 
-> Note: An initial publish needs to be done to NPM using ```npm publish``` before we can run ```npm version```.
+> Note: An initial publish needs a little setup before ```npm version``` will work.
+
+```js
+// manually build your dst
+npm run build
+// publish your module
+// --access public if this is a scoped module and you want it public
+npm publish --access public
+// rm -rf dst
+```
 
 * version, which will:
  * Rerun linting and tests
