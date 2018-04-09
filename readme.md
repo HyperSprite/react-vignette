@@ -2,14 +2,15 @@
 
 Adds a basic vignette to a sibling.
 
+## Usage
 
 ### Install
 ```npm install --save @hypersprite/react-vignette```
 
 ### Import
-```import Vignette from '@hypersprite/react-vignette'```
+```import Vignette from '@hypersprite/react-vignette';```
 
-## Usage
+### In Practice
 Add ```<Vignette />``` as a sibling to another component
 
 ```js
@@ -19,65 +20,24 @@ Add ```<Vignette />``` as a sibling to another component
 </div>
 ```
 
+### Scripts
 
-## Testing and Deployment
+use `npm run <script>`
 
-* Testing includes Jest testing with Enzyme for mounting and rendering and Instamatic for coverage reporting.
-* Linting provided by ESlint with AirBnB presets.
-* Modern JavaScript and JSX via babel.
-* Git pre-commit hooks to keep everyone honest.
+* `lint` - runs linter
+* `test` - runs test
+* `test:dev` - runs test in watch mode
+* `build` - runs build
+* `build:dev` - runs build in watch mode
 
+`npm version <major | minor | patch>`
 
-### Setup
-```bash
-git clone https://github.com/HyperSprite/react-vignette.git
-cd react-vignette
-npm install
-```
-Make sure to update this readme.md and package.json with your own information.
+### API
 
-## Testing
+#### Receives Props
 
-Testing provided by Jest, Enzyme and coverage report by Istanbul
+none
 
-* ```npm test``` Runs all tests.
-* ```npm run test:src``` only runs the tests in src in watch mode.
+#### New Passed Props
 
-## Add+Commit, Version
-
-> The branch must be clean to version and publish
-
-* Add
-* Commit, which will:
- * Run linting and tests with pre-commit hooks.
-
-```bash
-git commit -am 'some totally useful comment'
-```
-
-Next, we need to Version:
-
-> Note: An initial publish needs a little setup before ```npm version``` will work.
-
-```js
-// manually build your dst
-npm run build
-// publish your module
-// --access public if this is a scoped module and you want it public
-npm publish --access public
-// delete dst folder
-rm -rf dst
-```
-
-* version, which will:
- * Rerun linting and tests
- * Updates the package.json version numnber based on Major, Minor and Patch
- * Git add package.json using the version number as the commit message
- * Push the changes to Github
- * Transpile the JSX to ES5 with babel into the dst/ directory
- * Publish to npm
- * Delete the dst directory
-
-```bash   
-npm version <major | minor | patch>
-```
+none

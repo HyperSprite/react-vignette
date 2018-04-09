@@ -15,7 +15,7 @@
     "basic"
   ],
   "license": "MIT",
-  "description": "Basic Test, Version and Deploy Kit for react component modules",
+  "description": "Simple component to add vignette over an image",
   "main": "dst/index.js",
   "version": "1.0.1",
   "scripts": {
@@ -23,10 +23,14 @@
     "test:dev": "jest --watch",
     "lint": "eslint src/* .jsx",
     "build": "babel src --out-dir dst",
+    "build:dev": "npm run build -- -w",
     "preversion": "npm run test && npm run lint",
     "version": "npm run build",
     "postversion": "npm publish && rm -rf dst && git push"
   },
+  "files": [
+    "dst"
+  ],
   "precommit": [
     "lint",
     "test"
