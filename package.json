@@ -17,7 +17,7 @@
   "license": "MIT",
   "description": "Simple component to add vignette over an image",
   "main": "dst/index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watch",
